@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hoilam.youlu.activity.MainActivity" >
+
+    <android.support.v4.view.ViewPager 
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/radioGroup"
+        >
+       
+    </android.support.v4.view.ViewPager>
+    
+    
+    
+   <RadioGroup
+       android:id="@+id/radioGroup"
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:layout_alignParentBottom="true"
+       android:background="@drawable/img01_06"
+       android:orientation="horizontal"
+       >
+       <RadioButton 
+           android:id="@+id/radioButton1"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:button="@null"
+           android:layout_weight="1"
+           android:checked="true"
+           android:padding="15dp"
+           android:drawableTop="@drawable/selector_01"        
+           />
+       <RadioButton 
+           android:id="@+id/radioButton2"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:button="@null"
+           android:layout_weight="1"
+           android:padding="15dp"
+           android:drawableTop="@drawable/selector_02"        
+           />
+       <RadioButton 
+           android:id="@+id/radioButton3"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:button="@null"
+           android:layout_weight="1"
+           android:padding="15dp"
+           android:drawableTop="@drawable/selector_03"        
+           />
+       <RadioButton 
+           android:id="@+id/radioButton4"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:button="@null"
+           android:layout_weight="1"
+           android:padding="15dp"
+           android:drawableTop="@drawable/selector_04"        
+           />
+       
+       
+       
+   </RadioGroup>
+
+</RelativeLayout>

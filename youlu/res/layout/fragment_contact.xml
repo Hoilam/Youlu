@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000000"
+   >
+   <RelativeLayout 
+       android:id="@+id/relativeLayout_01"
+       android:layout_width="match_parent"
+	   android:layout_height="48dp"
+	   android:layout_alignParentLeft="true"
+	   android:layout_alignParentRight="true"
+	   android:background="@drawable/img01_02"
+       >
+       
+       <TextView 
+           android:id="@+id/textView_01"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="25sp"
+           android:textColor="@color/app_tetle_white"
+           android:layout_centerInParent="true"
+           android:text="@string/app_title_top"
+           />
+       <ImageView 
+           android:id="@+id/imageView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:src="@drawable/img02_03"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="10dp"
+           />
+        
+   </RelativeLayout>
+   
+   <GridView 
+       android:id="@+id/gridVeiw"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/relativeLayout_01"
+       android:background="@drawable/img02t_02"
+       android:numColumns="3"
+       
+       >
+       
+   </GridView>
+    
+    
+
+</RelativeLayout>
